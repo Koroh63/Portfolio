@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio</title>
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <!-- link file css -->
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <header>
+    <nav class="contanier">
+        <a href="#home"><img class="logo" src="img/logo.png" alt="Logo"></a>
+      <i id="btn-menu" class="fa-solid fa-bars"></i>
+      <div class="nav-links">
+        <a href="index.html#home" class="active">Accueil</a>
+        <a href="index.html#about">A propos</a>
+        <a href="index.html#parcours">Parcours</a>
+        <a href="index.html#Portfolio">Projets</a>
+        <a href="index.html#Contact">Contact</a>
+      </div>
+    </nav>
+  </header>
+  <!-- start home sec -->
+  <div class="projet" id="home">
+    <div class="contanier">
+      <div class="content">
+        <h4>Projet de </h4>
+        <h1>Site de Manipulation de Data</h1>
+        <p>avec Clustering, Nettoyage et Prédictions</p>
+        <a href="https://github.com/Koroh63/DataMiningProject" class="btn"><i class="fa-brands fa-github"></i>Lien GitHub</a>
+      </div>
+
+      <div class="projet-img">
+        <img src="img/projet3.png" alt="" class="responsive-img">
+      </div>
+    </div>
+  </div>
+
+  <section id="parcours" class="parcours">
+    <div class="contanier">
+      <div class="sec-top">
+        <h1>Projet de <span>Data Mining</span></h1>
+      </div>
+      <div class="content">
+        <h2>Présentation du Projet</h2>
+        <p>
+            Le projet "Data Mining : BabaMaCo" vise à fournir une vue détaillée de l'architecture de l'application, les choix de conception effectués, les défis rencontrés pendant le développement et les solutions apportées pour surmonter ces défis.
+        </p>
+
+        <h3>Chargement des Données</h3>
+        <p>
+            À l'arrivée sur l'application, l'utilisateur importe un fichier .csv pour commencer le traitement. Une fois importé, l'application affiche le dataset ainsi que des statistiques et graphiques relatifs aux données.
+        </p>
+
+        <h3>Nettoyage des Données</h3>
+        <p>
+            Après le chargement, nous passons à la gestion des valeurs nulles en utilisant diverses méthodes adaptées aux types de modèles utilisés.
+        </p>
+
+        <h3>Normalisation/Standardisation</h3>
+        <p>
+            Différentes méthodes de normalisation sont proposées pour redimensionner les données, comme la normalisation Min-Max, Max-Abs, Robust, Img, et la standardisation Z-Score.
+        </p>
+
+        <h3>Visualisation des Données</h3>
+        <p>
+            L'application permet de visualiser les données avec des histogrammes, des boîtes à moustache, et des graphiques linéaires pour mieux comprendre la répartition des données.
+        </p>
+
+        <h3>Clustering</h3>
+        <p>
+            L'utilisateur peut choisir entre KMeans et le clustering hiérarchique ascendant pour segmenter les données. Des suggestions optimales sont fournies pour faciliter les choix.
+        </p>
+
+        <h3>Prédiction</h3>
+        <p>
+            Pour la prédiction, l'utilisateur spécifie la colonne cible et choisit une méthode de prédiction adaptée, soit par régression linéaire, soit par classification.
+        </p>
+
+        <h3>Interface Utilisateur</h3>
+        <p>
+            L'interface, développée avec Streamlit, guide l'utilisateur à travers chaque étape du traitement, offrant une expérience utilisateur fluide et efficace.
+        </p>
+
+        <h3>Défis et Solutions</h3>
+        <p>
+            Plusieurs défis techniques ont été rencontrés et surmontés, notamment dans l'utilisation des boutons en cascade et la gestion du menu de navigation.
+        </p>
+
+        <h3>Conclusion</h3>
+        <p>
+            Ce projet a permis de développer une application de traitement et d'analyse de données complète et flexible, adaptée à divers types de données et analyses.
+        </p>
+    </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container">
+      <p>&copy; 2024 Corentin Richard. Tous droits réservés.</p>
+    </div>
+  </footer>
+  

@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 
 <head>
     <meta charset="UTF-8">
@@ -15,8 +15,7 @@
 <body>
     <header>
         <nav class="contanier">
-            <img class="logo" src="img/logo.png" alt="">
-            <i id="btn-menu" class="fa-solid fa-bars"></i>
+            <a href="#home"><img class="logo" src="img/logo.png" alt="Logo"></a>
             <div class="nav-links">
                 <a href="#home" class="active">Accueil</a>
                 <a href="#about">A propos</a>
@@ -96,7 +95,7 @@
     <section id="Portfolio" class="portfolio">
         <div class="contanier">
             <div class="sec-top">
-                <h1>Mes <span>Projets</span></h1>
+                <h1>Mes <span>Projets</span> Professionnels</h1>
             </div>
 
             <div class="boxs">
@@ -119,26 +118,69 @@
 
             </div>
         </div>
+
+        <div class="contanier">
+            <div class="sec-top">
+                <h1>Mes <span>Projets</span> d'Études</h1>
+            </div>
+
+            <div class="boxs">
+
+                <div class="box">
+                    <div class="box-hover">
+                        <a href="projet3.html"><span>Site de <br> Manipulation de Data <br>avec Python et Streamlit</span></a>
+                    </div>
+                    <img src="img/projet3.png" alt="">
+                </div>
+
+                <div class="box">
+                    <div class="box-hover">
+                        <a href="projet4.html"><span>Forum de <br>partage des rêves <br> en Symfony </span></a>
+                    </div>
+                    <img src="img/projet4.png" alt="">
+                </div>
+
+            </div>
+
+            <div class="boxs">
+
+                <div class="box">
+                    <div class="box-hover">
+                        <a href="projet5.html"><span>Gestionnaire de sorts <br> du jeu de rôles <br> PathFinder</span></a>
+                    </div>
+                    <img src="img/projet5.png" alt="">
+                </div>
+
+                <div class="box">
+                    <div class="box-hover">
+                        <a href="projet6.html"><span>Projet de <br> Machine Learning <br> sur les catastrophes naturelles</span></a>
+                    </div>
+                    <img src="img/projet6.png" alt="">
+                </div>
+
+            </div>
+        </div>
     </section>
 
 
     <!-- start Contact -->
 
-    <section id="Contact" class="contact">
+    <section id="contact" class="contact">
         <div class="contanier">
             <div class="sec-top">
                 <h1>Contactez <span>Moi</span></h1>
             </div>
-
-            <form action="">
-                <input type="text" placeholder="Prénom">
-                <input type="text" placeholder="Nom">
-                <input type="number" placeholder="Numéro de téléphone">
-                <input type="email" placeholder="Addresse Mail">
-                <textarea name="" id="" cols="30" rows="10" placeholder="Votre Message"></textarea>
-                <button class="btn">Envoyer</button>
+    
+            <form action="contact.php" method="post">
+                <input name="firstName" type="text" placeholder="Prénom" required>
+                <input name="lastName" type="text" placeholder="Nom" required>
+                <input name="phone" type="text" placeholder="Numéro de téléphone" required>
+                <input name="mail" type="email" placeholder="Adresse Mail" required>
+                <textarea name="message" cols="30" rows="10" placeholder="Votre Message" required></textarea>
+                <button class="btn" type="submit" name="submit">Envoyer</button>
             </form>
         </div>
+    </section>
     </section>
     <script src="main.js"></script>
 

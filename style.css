@@ -95,6 +95,12 @@ header nav {
     height: 80px;
 }
 
+nav .logo {
+    max-height: 50px; /* Ajustez la taille maximale du logo */
+    height: auto;
+    width: auto;
+}
+
 header nav .nav-links a {
     color: #fff;
     margin-left: 50px;
@@ -575,7 +581,7 @@ header nav .nav-links a.active {
 }
 
 .projet .projet-img img {
-    width: 1000px;
+    max-width: 45vw;
 }
 
 .content {
