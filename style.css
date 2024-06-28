@@ -97,7 +97,7 @@ header nav {
 
 .logo {
     max-height: 50px; /* Ajustez la taille maximale du logo */
-    height: auto;
+    height: 50px;
     width: auto;
 }
 
