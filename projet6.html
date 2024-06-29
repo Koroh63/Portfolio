@@ -33,7 +33,7 @@
         <h4>Projet de </h4>
         <h1>Prévisions des catastrophes </h1>
         <p>en Python avec Scikit-learn</p>
-        <a href="https://github.com/Koroh63/Plotambora" class="btn"><i class="fa-brands fa-github"></i>Lien GitHub</a>
+        <a href="https://github.com/Koroh63/Plotambora" class="btn"><i class="fa-brands fa-github"></i> Lien GitHub</a>
       </div>
 
       <div class="projet-img">
@@ -48,6 +48,31 @@
         <h1>Projet de <span>Machine Learning</span></h1>
       </div>
       <div class="content">
+
+        <p>
+          Le projet <strong>Plotambora</strong> vise à prédire le nombre de décès lors de catastrophes naturelles futures en utilisant Python et divers modèles de <strong>scikit-learn</strong>. Nous avons optimisé les paramètres des modèles et recherché les combinaisons de colonnes du dataset offrant les meilleures prévisions.
+      </p>
+      <p>
+          Dans ce projet, nous avons importé et nettoyé les données des catastrophes passées. Ensuite, nous avons étudié les données pour comprendre les tendances et décider des paramètres importants. Nous avons ensuite entraîné différents modèles de prédiction et évalué leurs résultats pour choisir le meilleur.
+      </p>
+      <p>
+          Pour les prévisions, nous avons utilisé deux approches complémentaires : une <strong>classification</strong> pour déterminer si des morts ont été enregistrés et une <strong>régression</strong> pour estimer le nombre de morts enregistrés.
+      </p>
+      <p>
+          Pour ce faire, nous avons sélectionné les colonnes pertinentes du dataset en utilisant des <strong>histogrammes</strong> et des <strong>graphiques</strong>. Les colonnes de localisation, de date, d'identification des catastrophes et de bilans humains ont été retenues. Nous avons géré la colonne 'Total Deaths' en remplissant les valeurs manquantes, en excluant les valeurs extrêmes et en la préparant pour l'entraînement du modèle.
+      </p>
+      <p>
+          La colonne 'Duration' a été créée à partir des dates de début et de fin des catastrophes, avec des valeurs manquantes remplies par des valeurs par défaut. Une colonne 'Lethality' a été ajoutée pour la classification, déterminée à partir de 'Total Deaths'. Les colonnes en chaînes de caractères ont été mappées en valeurs entières et les valeurs inutiles ont été rejetées du dataset.
+      </p>
+      <p>
+          Pour déterminer la présence de victimes, nous avons utilisé deux modèles : <strong>SVC (Support Vector Classification)</strong> et <strong>régression logistique</strong>. Le modèle SVC a été choisi pour sa précision légèrement supérieure.
+      </p>
+      <p>
+          Pour estimer le nombre de morts, nous avons utilisé trois modèles : <strong>régression linéaire</strong>, <strong>Lasso</strong> et <strong>ElasticNet</strong>. La régression linéaire a été choisie pour sa précision supérieure, bien que la précision globale soit encore faible.
+      </p>
+      <p>
+          Malgré de nombreuses actions pour améliorer la précision des modèles, celle-ci reste basse en raison de la nature aléatoire des données. Des améliorations futures pourraient inclure l'optimisation des paramètres avec <strong>GridSearchCV</strong> et l'utilisation de modèles plus efficaces comme les <strong>arbres de décision</strong> ou les <strong>forêts aléatoires</strong>.
+      </p>
 
       </div>
     </div>

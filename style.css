@@ -572,6 +572,11 @@ header nav .nav-links a.active {
     font-size: 30px;
     font-weight: bold;
     margin-bottom: 70px;
+    text-align: justify;
+}
+
+.parcours .contanier .content p{
+    text-align: justify;
 }
 
 .projet .button-container {
